@@ -1,0 +1,204 @@
+/* Minimal utility styles to improve accessibility and layout stability */
+:root{--brand-height:48px;--focus-bg:#0a74da;--focus-color:#fff}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:12px;top:12px;width:auto;height:auto;padding:8px 12px;background:var(--focus-bg);color:var(--focus-color);z-index:9999;border-radius:4px;text-decoration:none}
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+.logo{height:var(--brand-height);width:auto;display:block}
+.logo-strip img{width:auto; height:var(--brand-height); max-width:100%; display:block}
+.footer-text-logo{max-width:220px;height:auto;display:block}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+/* small responsive tweaks */
+@media (max-width:600px){:root{--brand-height:40px}} 
+/* Mobile-first styles for Northstar Web Solutions */
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --accent: #0ea5e9; /* sky blue */
+  --accent-dark: #0369a1;
+  --success: #059669;
+  --danger: #dc2626;
+  --max-width: 1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.4;
+}
+.container{
+  width:90%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:2rem 0;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{display:flex;align-items:center;text-decoration:none;color:inherit}
+.logo{width:44px;height:auto;margin-right:0.75rem;transition:width 0.18s ease}
+.company{font-weight:600}
+
+.main-nav{position:relative}
+.nav-list{list-style:none;padding:0;margin:0;display:flex;gap:1rem}
+.nav-list a{text-decoration:none;color:inherit}
+
+/* Nav buttons - uses blue accent theme */
+.nav-btn{
+  display:inline-block;
+  padding:0.45rem 0.9rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(14,165,233,0.12);
+  background:var(--accent);
+  color:#fff; /* ensure white text */
+  transition:transform 0.15s ease,box-shadow 0.15s ease,background 0.15s ease,color 0.15s ease;
+}
+.nav-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(2,6,23,0.06);background:var(--accent-dark);color:#fff}
+.nav-btn:focus{outline:3px solid rgba(14,165,233,0.24);outline-offset:2px}
+.nav-btn-primary{
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent-dark);
+}
+.nav-btn-primary:hover{background:var(--accent-dark);color:#fff}
+
+/* ensure nav button text remains white in all link states */
+.nav-btn, .nav-btn:link, .nav-btn:visited { color: #fff; }
+.nav-btn:active, .nav-btn:focus { color:#fff; outline:3px solid rgba(14,165,233,0.24); }
+
+
+/* Hero */
+.hero{background:linear-gradient(180deg, rgba(14,165,233,0.08), transparent);padding:4rem 0;border-bottom:1px solid rgba(15,23,36,0.04)}
+.hero h1{font-size:1.5rem;margin:0 0 0.5rem}
+.lead{color:var(--muted);margin-bottom:1rem}
+
+/* Buttons */
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:8px;border:none;cursor:pointer;font-weight:600;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff}
+/* Make secondary buttons match primary style (white text, blue background) */
+.btn-secondary{background:var(--accent);color:#fff;border:1px solid var(--accent-dark)}
+.btn-secondary:hover{background:var(--accent-dark);color:#fff}
+.btn:focus{outline:3px solid rgba(14,165,233,0.25);outline-offset:2px}
+.btn:hover{transform:translateY(-2px);transition:transform 0.18s ease}
+
+/* Services */
+.services h2{margin-top:0}
+.pricing-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem}
+.card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 4px 14px rgba(2,6,23,0.04)}
+.card h3{margin:0;font-size:1.25rem}
+.card .card-title{font-weight:600;margin:0.5rem 0}
+.card ul{padding-left:1.1rem;color:var(--muted)}
+.recommended{border:2px solid var(--accent-dark)}
+.badge{background:var(--accent);color:#fff;padding:0.1rem 0.5rem;border-radius:999px;font-size:0.75rem;margin-left:0.5rem}
+
+/* Portfolio */
+.projects-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem}
+.project-card{background:var(--card);padding:1rem;border-radius:10px}
+.project-card.featured{border-left:4px solid var(--accent)}
+.project-preview{margin:1rem 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 6px rgba(0,0,0,0.1);height:250px}
+.project-preview img{width:110%;height:120%;display:block;object-fit:cover;transition:transform 0.3s ease;margin-top:-15%;margin-left:-5%}
+.project-card:hover .project-preview img{transform:scale(1.05)}
+.project-link{text-decoration:none;color:var(--accent);font-weight:600}
+
+/* Partners section removed — partner grid styles are no longer needed */
+
+/* Contact form */
+.form-row{margin-bottom:0.75rem}
+label{display:block;margin-bottom:0.25rem;font-weight:600}
+input[type="text"],input[type="email"],textarea{width:100%;padding:0.6rem;border-radius:6px;border:1px solid rgba(15,23,36,0.08);font-size:1rem}
+input:focus,textarea:focus{outline:3px solid rgba(14,165,233,0.18);outline-offset:0}
+.error{color:var(--danger);font-size:0.9rem;height:1.2rem}
+.form-actions{display:flex;gap:1rem;align-items:center}
+.form-status{color:var(--muted)}
+
+/* Contact info */
+.contact-info{display:flex;gap:1.25rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap}
+.contact-info p{margin:0}
+.contact-link{color:var(--accent-dark);font-weight:600;text-decoration:none}
+.contact-link:hover{color:var(--accent);text-decoration:underline}
+/* footer-contact removed — contact links are only shown in the Contact section */
+
+@media(max-width:700px){
+  .contact-info{flex-direction:column;align-items:flex-start}
+  .footer-contact{display:block;margin-top:0.5rem}
+}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(15,23,36,0.04);padding:1.25rem 0;background:transparent}
+.footer-inner{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.muted{color:var(--muted)}
+
+/* Larger screens */
+@media(min-width:700px){
+  .hero h1{font-size:2rem}
+  .pricing-grid{grid-template-columns:repeat(3,1fr)}
+  .projects-grid{grid-template-columns:repeat(3,1fr)}
+  /* hero uses only a subtle gradient on larger screens; logo watermark removed */
+  .hero{background: linear-gradient(180deg, rgba(14,165,233,0.06), transparent);}
+  /* increase header logo size on larger screens (approx. 10x) */
+  .logo{width:440px;height:auto}
+}
+
+/* Decorative logos */
+ .logo-strip{display:flex !important;gap:1rem;align-items:center;overflow:visible;padding:0.6rem 0;border-top:1px solid rgba(15,23,36,0.02);background:linear-gradient(180deg, transparent, rgba(14,165,233,0.02));justify-content:center;position:relative;z-index:1000}
+.strip-logo{height:44px;opacity:0.28 !important;filter:grayscale(0.88) contrast(0.9);pointer-events:none;transition:transform 0.25s ease,opacity 0.25s ease}
+.strip-logo:hover{transform:translateY(-4px);opacity:0.36}
+.project-card{position:relative}
+.project-badge{position:absolute;top:12px;right:12px;height:40px;opacity:0.12;pointer-events:none}
+.footer-watermark{position:relative}
+.footer-watermark img{position:absolute;right:1rem;bottom:-6px;height:80px;opacity:0.04;pointer-events:none}
+.footer-text-logo{height:120px;max-height:120px;margin-left:1rem;opacity:0.95;pointer-events:none;object-fit:contain}
+
+/* Footer logos removed as requested — footer only contains the watermark now */
+.footer-inner{position:relative}
+
+@media(max-width:900px){
+  /* No footer logos to resize */
+}
+
+@media (prefers-reduced-motion: reduce){
+  /* No footer animations */
+} 
+
+@media(max-width:900px){
+  /* reduce size on medium screens */
+  .footer-text-logo{height:60px;max-height:60px}
+}
+
+@media(max-width:480px){
+  .logo-strip{display:none}
+  .project-badge{display:none}
+  .footer-watermark{display:none}
+  .footer-text-logo{display:none}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .strip-logo,.project-badge,.footer-watermark img{transition:none}
+  .strip-logo:hover{transform:none}
+}
+
+@media(max-width:480px){
+  .logo-strip{display:none}
+  .project-badge{display:none}
+  .footer-watermark{display:none}
+}
+
+/* Accessibility tweaks */
+a:focus{outline:3px solid rgba(14,165,233,0.22);outline-offset:2px}
+
+/* Small helpers */
+.visually-hidden{
+  position:absolute!important;
+  width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+.badge{display:inline-block}
+.card h3{color:var(--accent-dark)}

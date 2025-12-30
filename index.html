@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Northstar Web Solutions</title>
+  <meta name="description" content="Custom interactive websites and admin tools for small businesses. Simple pricing and fast delivery." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/13Vh5nDX/New-Project-(2).png">
+  <link rel="apple-touch-icon" href="https://i.postimg.cc/13Vh5nDX/New-Project-(2).png">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" role="img" aria-label="Northstar Web Solutions">
+        <img src="https://i.postimg.cc/Y0vLyzLV/New-Project-(1).png" alt="Northstar Web Solutions" class="logo" />
+        <span class="visually-hidden">Northstar Web Solutions</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul id="primary-navigation" class="nav-list">
+          <li><a class="nav-btn nav-btn-primary" href="#services">Services</a></li>
+          <li><a class="nav-btn nav-btn-primary" href="about.html">About</a></li>
+          <li><a class="nav-btn nav-btn-primary" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-btn nav-btn-primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="logo-strip" aria-hidden="true">
+      <img class="strip-logo" src="https://i.postimg.cc/y8ZCjgQy/New-Project.png" alt="" aria-hidden="true" />
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Custom interactive websites for small businesses</h1>
+        <p class="lead">Simple pricing, friendly support, and smart forms for bookings and client intake. A team of experts dedicated to your success.</p>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h2>Services & Pricing</h2>
+      <p class="muted">Clear packages to fit your needs—upgrade anytime.</p>
+      <div class="pricing-grid">
+        <article class="card">
+          <h3>£50</h3>
+          <p class="card-title">Basic Web Presence</p>
+          <ul>
+            <li>Modern design</li>
+            <li>Responsive layout</li>
+            <li>Contact form</li>
+          </ul>
+          <button class="btn btn-secondary" data-package="Basic">Select</button>
+        </article>
+
+        <article class="card recommended">
+          <h3>£100</h3>
+          <p class="card-title">Interactive Business Website <span class="badge">Recommended</span></p>
+          <ul>
+            <li>Carefully crafted</li>
+            <li>Interactive elements</li>
+            <li>Engaging user experience</li>
+          </ul>
+          <button class="btn btn-primary" data-package="Interactive">Select</button>
+        </article>
+
+        <article class="card">
+          <h3>£150</h3>
+          <p class="card-title">Website + Admin View</p>
+          <ul>
+            <li>Custom admin panel</li>
+            <li>Client data & bookings</li>
+            <li>Private pages & roles</li>
+          </ul>
+          <button class="btn btn-secondary" data-package="Admin">Select</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+      <h2>Portfolio</h2>
+      <p class="muted">Selected projects—interactive and user-focused.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img class="project-badge" src="assets/logos/text-logo.png" alt="" aria-hidden="true" />
+          <div class="project-preview">
+            <img src="https://i.postimg.cc/ZRcVx9fd/Home-Sunrise-Bakery-and-1-more-page-Profile-1-Microsoft-Edge-30-12-2025-11-51-23.png" alt="Bakery Portfolio Preview" />
+          </div>
+          <h3>Local Bakery Page</h3>
+          <p>Multi-page site with order form and seasonal menus.</p>
+          <a class="project-link" href="https://bakeryportfolio.netlify.app" target="_blank" rel="noopener noreferrer">View project</a>
+        </article>
+
+        <article class="project-card">
+          <img class="project-badge" src="assets/logos/new-project-transparent.png" alt="" aria-hidden="true" />
+          <div class="project-preview">
+            <img src="https://i.postimg.cc/25nH39h7/Pixel-Palace-Arcade-Bar-Retro-Gaming-Craft-Drinks-and-2-more-pages-Profile-1-Microsoft-Edge.png" alt="Pixel Palace Preview" />
+          </div>
+          <h3>Arcade Bar Website</h3>
+          <p>Featured interactive game demo built with vanilla JavaScript and Canvas.</p>
+          <a class="project-link" href="https://pixelpalaceportfolio.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="View Pixel Palace project">View project</a>
+        </article>
+
+        <article class="project-card">
+          <img class="project-badge" src="assets/logos/logo.png" alt="" aria-hidden="true" />
+          <div class="project-preview">
+            <img src="https://i.postimg.cc/xTdFgRV1/Pixel-Palace-Arcade-Bar-Retro-Gaming-Craft-Drinks-and-2-more-pages-Profile-1-Microsoft-Edge.png" alt="Hair Salon Dashboard Preview" />
+          </div>
+          <h3>Hair Salon Dashboard</h3>
+          <p>Client Management Dashboard and booking widget for small businesses.</p>
+          <a class="project-link" href="https://deluxe-biscuit-e67db3.netlify.app" target="_blank" rel="noopener noreferrer">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trusted by section removed — logos are used as decorations elsewhere -->
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p class="muted">Send a message or book a consultation.</p>
+      <aside class="contact-info" aria-label="Contact details">
+        <p><strong>Email:</strong> <a class="contact-link" href="mailto:northstarwebsolutionsldn@gmail.com">northstarwebsolutionsldn@gmail.com</a></p>
+        <p><strong>Telephone:</strong> <a class="contact-link" href="tel:+447428238733">+44 7428 238733</a></p>
+      </aside>
+      <form id="contactForm" novalidate aria-describedby="form-status">
+        <div class="form-row">
+          <label for="name">Name <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+          <div class="error" id="error-name" aria-live="polite"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" required aria-required="true" />
+          <div class="error" id="error-email" aria-live="polite"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <div class="error" id="error-message" aria-live="polite"></div>
+        </div>
+
+        <div class="form-actions">
+          <button id="submitBtn" class="btn btn-primary" type="submit">Send message</button>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Northstar Web Solutions. All rights reserved.</p>
+      <!-- Text logo (hosted) — replaced local/grey logos with your provided image -->
+      <img class="footer-text-logo" src="https://i.postimg.cc/3Jnvw2SW/Text-Logo-Transperant.png" alt="Northstar Web Solutions" aria-hidden="true" />
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
