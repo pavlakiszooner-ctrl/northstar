@@ -73,7 +73,8 @@ body{
   transform:translateY(-1px) scale(1);
   box-shadow:0 4px 12px rgba(14,165,233,0.3);
 }
-.nav-btn:focus{outline:3px solid rgba(14,165,233,0.4);outline-offset:2px}
+.nav-btn:focus{outline:none}
+.nav-btn:focus-visible{outline:3px solid rgba(14,165,233,0.4);outline-offset:2px}
 .nav-btn-primary{
   background:linear-gradient(135deg, var(--accent), var(--accent-dark));
   color:#fff;
@@ -85,7 +86,7 @@ body{
 
 /* ensure nav button text remains white in all link states */
 .nav-btn, .nav-btn:link, .nav-btn:visited { color: #fff; }
-.nav-btn:active, .nav-btn:focus { color:#fff; outline:3px solid rgba(14,165,233,0.24); }
+.nav-btn:active { color:#fff; }
 
 
 /* Hero */
@@ -663,7 +664,8 @@ input:focus,textarea:focus{outline:3px solid rgba(14,165,233,0.18);outline-offse
 }
 
 /* Accessibility tweaks */
-a:focus{outline:3px solid rgba(14,165,233,0.22);outline-offset:2px}
+a:focus{outline:none}
+a:focus-visible{outline:3px solid rgba(14,165,233,0.22);outline-offset:2px}
 
 /* Small helpers */
 .visually-hidden{
