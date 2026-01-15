@@ -38,13 +38,26 @@
   <main>
     <section id="home" class="hero">
       <div class="container">
-        <h1>Custom interactive websites for small businesses</h1>
-        <p class="lead">Simple pricing, friendly support, and smart forms for bookings and client intake. A team of experts dedicated to your success.</p>
+        <h1 class="hero-title">
+          <span class="title-word">Custom</span>
+          <span class="title-word">interactive</span>
+          <span class="title-word">websites</span>
+          <span class="title-word">for</span>
+          <span class="title-word">small</span>
+          <span class="title-word">businesses</span>
+        </h1>
+        <p class="lead hero-lead">
+          <span class="lead-line">Simple pricing, friendly support, and smart forms for bookings and client intake.</span>
+          <span class="lead-line">A team of experts dedicated to your success.</span>
+        </p>
       </div>
     </section>
 
     <section id="services" class="services container">
-      <h2>Services & Pricing</h2>
+      <h2 class="section-heading">
+        <span class="heading-text">Services</span>
+        <span class="heading-decoration"></span>
+      </h2>
       <p class="muted">Clear packages to fit your needs—upgrade anytime.</p>
       <div class="pricing-grid">
         <article class="card">
@@ -83,10 +96,13 @@
     </section>
 
     <section id="portfolio" class="portfolio container">
-      <h2>Portfolio</h2>
-      <p class="muted">Selected projects—interactive and user-focused.</p>
+      <h2 class="portfolio-title animate-on-scroll section-heading">
+        <span class="heading-text">Portfolio</span>
+        <span class="heading-decoration"></span>
+      </h2>
+      <p class="muted portfolio-subtitle animate-on-scroll">Selected projects—interactive and user-focused.</p>
       <div class="projects-grid">
-        <article class="project-card">
+        <article class="project-card animate-on-scroll">
           <img class="project-badge" src="assets/logos/text-logo.png" alt="" aria-hidden="true" />
           <div class="project-preview">
             <img src="https://i.postimg.cc/ZRcVx9fd/Home-Sunrise-Bakery-and-1-more-page-Profile-1-Microsoft-Edge-30-12-2025-11-51-23.png" alt="Bakery Portfolio Preview" />
@@ -96,7 +112,7 @@
           <a class="project-link" href="https://bakeryportfolio.netlify.app" target="_blank" rel="noopener noreferrer">View project</a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card animate-on-scroll">
           <img class="project-badge" src="assets/logos/new-project-transparent.png" alt="" aria-hidden="true" />
           <div class="project-preview">
             <img src="https://i.postimg.cc/25nH39h7/Pixel-Palace-Arcade-Bar-Retro-Gaming-Craft-Drinks-and-2-more-pages-Profile-1-Microsoft-Edge.png" alt="Pixel Palace Preview" />
@@ -106,7 +122,7 @@
           <a class="project-link" href="https://pixelpalaceportfolio.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="View Pixel Palace project">View project</a>
         </article>
 
-        <article class="project-card">
+        <article class="project-card animate-on-scroll">
           <img class="project-badge" src="assets/logos/logo.png" alt="" aria-hidden="true" />
           <div class="project-preview">
             <img src="https://i.postimg.cc/xTdFgRV1/Pixel-Palace-Arcade-Bar-Retro-Gaming-Craft-Drinks-and-2-more-pages-Profile-1-Microsoft-Edge.png" alt="Hair Salon Dashboard Preview" />
@@ -121,28 +137,34 @@
     <!-- Trusted by section removed — logos are used as decorations elsewhere -->
 
     <section id="contact" class="contact container">
-      <h2>Contact</h2>
+      <h2 class="section-heading">
+        <span class="heading-text">Contact</span>
+        <span class="heading-decoration"></span>
+      </h2>
       <p class="muted">Send a message or book a consultation.</p>
       <aside class="contact-info" aria-label="Contact details">
         <p><strong>Email:</strong> <a class="contact-link" href="mailto:northstarwebsolutionsldn@gmail.com">northstarwebsolutionsldn@gmail.com</a></p>
         <p><strong>Telephone:</strong> <a class="contact-link" href="tel:+447428238733">+44 7428 238733</a></p>
       </aside>
-      <form id="contactForm" novalidate aria-describedby="form-status">
-        <div class="form-row">
+      <form id="contactForm" class="interactive-form" novalidate aria-describedby="form-status">
+        <div class="form-row form-field">
+          <input id="name" name="name" type="text" required aria-required="true" placeholder="" />
           <label for="name">Name <span aria-hidden="true">*</span></label>
-          <input id="name" name="name" type="text" required aria-required="true" />
+          <div class="form-field-bar"></div>
           <div class="error" id="error-name" aria-live="polite"></div>
         </div>
 
-        <div class="form-row">
+        <div class="form-row form-field">
+          <input id="email" name="email" type="email" required aria-required="true" placeholder="" />
           <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" required aria-required="true" />
+          <div class="form-field-bar"></div>
           <div class="error" id="error-email" aria-live="polite"></div>
         </div>
 
-        <div class="form-row">
+        <div class="form-row form-field">
+          <textarea id="message" name="message" rows="5" placeholder=""></textarea>
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <div class="form-field-bar"></div>
           <div class="error" id="error-message" aria-live="polite"></div>
         </div>
 

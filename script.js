@@ -197,14 +197,51 @@ document.addEventListener('DOMContentLoaded', function () {
     if(yearEl) yearEl.textContent = new Date().getFullYear();
   }
 
+  // Toggle video visibility
+  function initVideoToggle(){
+    const videoToggle = document.getElementById('videoToggle');
+    const videoWrapper = document.getElementById('videoWrapper');
+    
+    if(videoToggle && videoWrapper){
+      videoToggle.addEventListener('click', function(){
+        videoWrapper.classList.toggle('hidden');
+      });
+    }
+  }
+
+  // Scroll animations using Intersection Observer
+  function initScrollAnimations(){
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    if('IntersectionObserver' in window){
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('animated');
+          }
+        });
+      }, {
+        threshold:0.1,
+        rootMargin:'0px 0px -50px 0px'
+      });
+      
+      animatedElements.forEach(el => observer.observe(el));
+    } else {
+      // Fallback for browsers without Intersection Observer
+      animatedElements.forEach(el => el.classList.add('animated'));
+    }
+  }
+
   // Initialize app
   function init(){
     setYear();
-    form.addEventListener('submit', handleSubmit);
+    if(form) form.addEventListener('submit', handleSubmit);
     initSmoothScroll();
     initNavToggle();
     initPackageButtons();
     initDecorativeLogos();
+    initVideoToggle();
+    initScrollAnimations();
   }
 
 
