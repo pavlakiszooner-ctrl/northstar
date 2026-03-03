@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="https://i.postimg.cc/gkkypVr9/New-Project-(2)-(1).png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Northstarwebsolutions</title>
+    <title>Contact | Northstarwebsolutions</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -18,8 +18,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -29,22 +29,43 @@
         </nav>
     </header>
     <main>
-        <section class="about" id="about">
-            <div class="about-hero">
-                <div class="about-img-col">
-                    <div class="about-img-frame">
-                        <img src="https://i.postimg.cc/Wbvw9WF0/headshot.jpg" alt="Profile" class="about-img" />
+        <section class="contact" id="contact">
+            <h2 class="section-title contact-title">Contact</h2>
+            <div class="contact-intro">Let’s connect. Fill out the form below or reach out directly—your message will be answered promptly and professionally.</div>
+            <div class="contact-content modern">
+                <div class="contact-box-unified">
+                    <form class="contact-form modern" id="contactForm" action="https://formspree.io/f/mnqewqzv" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                    <div class="contact-info-unified">
+                        <div class="contact-info-block">
+                            <span class="contact-info-label">Email:</span>
+                            <a href="mailto:northstarwebsolutionsldn@gmail.com" class="contact-info-link">northstarwebsolutionsldn@gmail.com</a>
+                        </div>
+                        <div class="contact-info-block">
+                            <span class="contact-info-label">Phone:</span>
+                            <a href="tel:+447428238733" class="contact-info-link">+44 7428 238733</a>
+                        </div>
+                        <div class="contact-info-block">
+                            <span class="contact-info-label">Location:</span>
+                            <span class="contact-info-link">London, UK</span>
+                        </div>
                     </div>
-                </div>
-                <div class="about-text-col">
-                    <h2 class="about-title"><span>ABOUT</span> <span class="about-title-accent">ME</span></h2>
-                    <h3 class="about-role">Web Designer / Web Developer</h3>
-                    <p class="about-summary">I’m a developer you can rely on. I specialize in building modern web apps, dashboards, and scalable backend systems. I focus on clean UI/UX, robust code, and clear communication throughout every project.</p>
-                    <ul class="about-bullets">
-                        <li>JavaScript, TypeScript, React, Node.js, Express</li>
-                        <li>UI/UX Design, HTML5, CSS3/SASS</li>
-                    </ul>
-                    <a href="https://jumpshare.com/share/ie35JFi2Jro5hS8qZqez" class="about-btn" target="_blank" rel="noopener">Download CV</a>
                 </div>
             </div>
         </section>

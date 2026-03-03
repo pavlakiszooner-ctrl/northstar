@@ -1,189 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Northstar Web Solutions</title>
-  <meta name="description" content="Custom interactive websites and admin tools for small businesses. Simple pricing and fast delivery." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="https://i.postimg.cc/13Vh5nDX/New-Project-(2).png">
-  <link rel="apple-touch-icon" href="https://i.postimg.cc/13Vh5nDX/New-Project-(2).png">
-  <meta name="theme-color" content="#0ea5e9">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/gkkypVr9/New-Project-(2)-(1).png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Northstar Web Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="brand" role="img" aria-label="Northstar Web Solutions">
-        <img src="https://i.postimg.cc/Y0vLyzLV/New-Project-(1).png" alt="Northstar Web Solutions" class="logo" />
-        <span class="visually-hidden">Northstar Web Solutions</span>
-      </div>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="logo-brand">
+                <img src="https://i.postimg.cc/MGX1BqVm/New-Project-(1).png" alt="Northstarwebsolutions Logo" class="org-logo" style="height:90px; vertical-align:middle;">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                    <li><a href="#top">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+        <a id="top"></a>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul id="primary-navigation" class="nav-list">
-          <li><a class="nav-btn nav-btn-primary" href="#services">Services</a></li>
-          <li><a class="nav-btn nav-btn-primary" href="about.html">About</a></li>
-          <li><a class="nav-btn nav-btn-primary" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-btn nav-btn-primary" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="logo-strip" aria-hidden="true">
-      <img class="strip-logo" src="https://i.postimg.cc/y8ZCjgQy/New-Project.png" alt="" aria-hidden="true" />
-    </div>
-  </header>
+    <main>
+        <!-- Home Section -->
+        <section class="home" id="home">
+                        <div class="home-content">
+                                <img src="https://i.postimg.cc/Wbvw9WF0/headshot.jpg" alt="Nick Pavlakis Profile" class="profile-img animated-profile">
+                                <div class="intro-animate">
+                                    <h1>Nick Pavlakis</h1>
+                                    <h2>Web Designer / Web Developer</h2>
+                                    <a href="contact.html" class="btn hire-me">Hire Me</a>
+                                </div>
+                        </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2 class="section-title services-title">SERVICES</h2>
+            <div class="services-intro">
+                A developer that is well versed in modern web architecture and engineering. I deliver robust, scalable, and user-focused solutions whether you need a custom app, a powerful dashboard, or seamless cloud integration.
+            </div>
+            <div class="services-list expanded">
+                <div class="service-card expanded">
+                    <div class="service-icon"><img src="https://cdn.jsdelivr.net/gh/feathericons/feather/icons/layout.svg" alt="UI/UX" /></div>
+                    <h3 class="service-title">Custom Web App Development</h3>
+                    <p class="service-desc">From concept to launch, we design and build tailored web applications that fit your business needs. Our team blends UI/UX design, frontend, and backend expertise for seamless, high-performance results.</p>
+                </div>
+                <div class="service-card expanded">
+                    <div class="service-icon"><img src="https://cdn.jsdelivr.net/gh/feathericons/feather/icons/code.svg" alt="API" /></div>
+                    <h3 class="service-title">API & Backend Engineering</h3>
+                    <p class="service-desc">I architect secure, scalable APIs and backend systems. My solutions power everything from dashboards to mobile apps, with a focus on reliability, data integrity, and easy integration.</p>
+                </div>
+                <div class="service-card expanded">
+                    <div class="service-icon"><img src="https://cdn.jsdelivr.net/gh/feathericons/feather/icons/cloud.svg" alt="Cloud" /></div>
+                    <h3 class="service-title">Cloud & DevOps Solutions</h3>
+                    <p class="service-desc">Deploy, monitor, and automate with confidence. I set up cloud infrastructure, CI/CD pipelines, and monitoring so your projects run smoothly and scale effortlessly.</p>
+                </div>
+                <div class="service-card expanded">
+                    <div class="service-icon"><img src="https://cdn.jsdelivr.net/gh/feathericons/feather/icons/shield.svg" alt="Support" /></div>
+                    <h3 class="service-title">Ongoing Support & Maintenance</h3>
+                    <p class="service-desc">I provide tailored support and maintenance to keep your web solutions secure, up-to-date, and performing at their best—so you can focus on what matters most.</p>
+                </div>
+            </div>
+        </section>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h1 class="hero-title">
-          <span class="title-word">Custom</span>
-          <span class="title-word">interactive</span>
-          <span class="title-word">websites</span>
-          <span class="title-word">for</span>
-          <span class="title-word">small</span>
-          <span class="title-word">businesses</span>
-        </h1>
-        <p class="lead hero-lead">
-          <span class="lead-line">Simple pricing, friendly support, and smart forms for bookings and client intake.</span>
-          <span class="lead-line">A team of experts dedicated to your success.</span>
-        </p>
-      </div>
-    </section>
-
-    <section id="services" class="services container">
-      <h2 class="section-heading">
-        <span class="heading-text">Services</span>
-        <span class="heading-decoration"></span>
-      </h2>
-      <p class="muted">Clear packages to fit your needs—upgrade anytime.</p>
-      <div class="pricing-grid">
-        <article class="card">
-          
-          <p class="card-title">Basic Web Presence</p>
-          <ul>
-            <li>Modern design</li>
-            <li>Responsive layout</li>
-            <li>Contact form</li>
-          </ul>
-          <button class="btn btn-secondary" data-package="Basic">Select</button>
-        </article>
-
-        <article class="card recommended">
-          
-          <p class="card-title">Interactive Business Website <span class="badge">Recommended</span></p>
-          <ul>
-            <li>Carefully crafted</li>
-            <li>Interactive elements</li>
-            <li>Engaging user experience</li>
-          </ul>
-          <button class="btn btn-primary" data-package="Interactive">Select</button>
-        </article>
-
-        <article class="card">
-          
-          <p class="card-title">Website + Admin View</p>
-          <ul>
-            <li>Custom admin panel</li>
-            <li>Client data & bookings</li>
-            <li>Private pages & roles</li>
-          </ul>
-          <button class="btn btn-secondary" data-package="Admin">Select</button>
-        </article>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio container">
-      <h2 class="portfolio-title animate-on-scroll section-heading">
-        <span class="heading-text">Portfolio</span>
-        <span class="heading-decoration"></span>
-      </h2>
-      <p class="muted portfolio-subtitle animate-on-scroll">Selected projects—interactive and user-focused.</p>
-      <div class="projects-grid">
-        <article class="project-card animate-on-scroll">
-          <img class="project-badge" src="assets/logos/text-logo.png" alt="" aria-hidden="true" />
-          <div class="project-preview">
-            <img src="https://i.postimg.cc/ZRcVx9fd/Home-Sunrise-Bakery-and-1-more-page-Profile-1-Microsoft-Edge-30-12-2025-11-51-23.png" alt="Bakery Portfolio Preview" />
-          </div>
-          <h3>Local Bakery Page</h3>
-          <p>Multi-page site with order form and seasonal menus.</p>
-          <a class="project-link" href="https://bakeryportfolio.netlify.app" target="_blank" rel="noopener noreferrer">View project</a>
-        </article>
-
-        <article class="project-card animate-on-scroll">
-          <img class="project-badge" src="assets/logos/new-project-transparent.png" alt="" aria-hidden="true" />
-          <div class="project-preview">
-            <img src="https://i.postimg.cc/25nH39h7/Pixel-Palace-Arcade-Bar-Retro-Gaming-Craft-Drinks-and-2-more-pages-Profile-1-Microsoft-Edge.png" alt="Pixel Palace Preview" />
-          </div>
-          <h3>Arcade Bar Website</h3>
-          <p>Featured interactive game demo built with vanilla JavaScript and Canvas.</p>
-          <a class="project-link" href="https://pixelpalaceportfolio.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="View Pixel Palace project">View project</a>
-        </article>
-
-        <article class="project-card animate-on-scroll">
-          <img class="project-badge" src="assets/logos/logo.png" alt="" aria-hidden="true" />
-          <div class="project-preview">
-            <img src="https://i.postimg.cc/xTdFgRV1/Pixel-Palace-Arcade-Bar-Retro-Gaming-Craft-Drinks-and-2-more-pages-Profile-1-Microsoft-Edge.png" alt="Hair Salon Dashboard Preview" />
-          </div>
-          <h3>Hair Salon Dashboard</h3>
-          <p>Client Management Dashboard and booking widget for small businesses.</p>
-          <a class="project-link" href="https://deluxe-biscuit-e67db3.netlify.app" target="_blank" rel="noopener noreferrer">View project</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Trusted by section removed — logos are used as decorations elsewhere -->
-
-    <section id="contact" class="contact container">
-      <h2 class="section-heading">
-        <span class="heading-text">Contact</span>
-        <span class="heading-decoration"></span>
-      </h2>
-      <p class="muted">Send a message or book a consultation.</p>
-      <aside class="contact-info" aria-label="Contact details">
-        <p><strong>Email:</strong> <a class="contact-link" href="mailto:northstarwebsolutionsldn@gmail.com">northstarwebsolutionsldn@gmail.com</a></p>
-        <p><strong>Telephone:</strong> <a class="contact-link" href="tel:+447428238733">+44 7428 238733</a></p>
-      </aside>
-      <form id="contactForm" class="interactive-form" novalidate aria-describedby="form-status">
-        <div class="form-row form-field">
-          <input id="name" name="name" type="text" required aria-required="true" placeholder="" />
-          <label for="name">Name <span aria-hidden="true">*</span></label>
-          <div class="form-field-bar"></div>
-          <div class="error" id="error-name" aria-live="polite"></div>
+        <div style="height: 8rem;"></div>
+    </main>
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" style="padding-left:2rem; padding-right:2rem;">
+                <a href="https://hairsalonportfolio.netlify.app" class="project-card" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/Wpd7Mvjc/image-2026-03-03-145514264.png" alt="Hair Saloon Preview">
+                    <h3>Hair Saloon</h3>
+                    <p>Hair salon booking website with access to client management dashboard.</p>
+                </a>
+                <a href="https://pixelpalaceportfolio.netlify.app" class="project-card" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/qgfqKnr3/image-2026-03-03-145421459.png" alt="Arcade Game Preview">
+                    <h3>Arcade Game</h3>
+                    <p>Interactive arcade-style web game demonstrating JavaScript logic and state handling.</p>
+                </a>
+                <a href="https://vanguardadmintool.netlify.app" class="project-card" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/Hn8jjzq1/image-2026-03-03-145323083.png" alt="Admin Tool Preview">
+                    <h3>Admin Tool</h3>
+                    <p>Admin tool with integrated UI functions for managing companies.</p>
+                </a>
+            </div>
+        </section>
+        <div style="height: 6rem;"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="social-links">
+                    <a href="https://github.com/pavlakiszooner-ctrl" target="_blank" aria-label="GitHub" class="github"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+                    <a href="mailto:northstarwebsolutionsldn@gmail.com" aria-label="Email" class="email"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="Email: northstarwebsolutionsldn@gmail.com"></a>
+                    <a href="https://www.linkedin.com/in/nikolaos-pavlakis-281960264/" target="_blank" aria-label="LinkedIn" class="linkedin"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <p>&copy; 2026 Northstarwebsolutions. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <img src="https://i.postimg.cc/R0qwt4KP/Text-Logo-Transperant.png" alt="Northstarwebsolutions Text Logo" class="footer-text-logo" style="height:40px; margin-bottom:10px;">
+            </div>
         </div>
-
-        <div class="form-row form-field">
-          <input id="email" name="email" type="email" required aria-required="true" placeholder="" />
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <div class="form-field-bar"></div>
-          <div class="error" id="error-email" aria-live="polite"></div>
-        </div>
-
-        <div class="form-row form-field">
-          <textarea id="message" name="message" rows="5" placeholder=""></textarea>
-          <label for="message">Message</label>
-          <div class="form-field-bar"></div>
-          <div class="error" id="error-message" aria-live="polite"></div>
-        </div>
-
-        <div class="form-actions">
-          <button id="submitBtn" class="btn btn-primary" type="submit">Send message</button>
-          <div id="form-status" class="form-status" aria-live="polite"></div>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Northstar Web Solutions. All rights reserved.</p>
-      <!-- Text logo (hosted) — replaced local/grey logos with your provided image -->
-      <img class="footer-text-logo" src="https://i.postimg.cc/3Jnvw2SW/Text-Logo-Transperant.png" alt="Northstar Web Solutions" aria-hidden="true" />
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
-</body>
-</html>
+        <!-- No JS scroll adjustment needed -->
+    </footer>
